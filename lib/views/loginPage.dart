@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restaurante/views/wcWidgets.dart';
+import 'package:restaurante/widgets/items.dart';
 import 'package:restaurante/views/welcomePage.dart';
 
 class LoginPage extends StatelessWidget {
@@ -19,8 +19,8 @@ class LoginPage extends StatelessWidget {
         backgroundColor: const Color(0xFF16AAFF),
         body: Center(
           child: Container(
-            width: width * 0.85,
-            height: height * 0.85,
+            width: width * 0.9,
+            height: height * 0.9,
             decoration: BoxDecoration(
               color: const Color(0xFF67C7FF),
               borderRadius: BorderRadius.circular(20),

@@ -3,7 +3,7 @@ import 'package:restaurante/widgets/items.dart';
 import 'package:restaurante/views/loginPage.dart';
 import 'package:restaurante/views/signupPage.dart';
 import 'package:restaurante/views/menuPage.dart';
-import 'package:restaurante/views/reservasPage.dart';
+import 'package:restaurante/views/bookingPage.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -22,8 +22,8 @@ class WelcomePage extends StatelessWidget {
         backgroundColor: const Color(0xFF16AAFF),
         body: Center(
           child: Container(
-            width: width * 0.85,
-            height: height * 0.85,
+            width: width * 0.9,
+            height: height * 0.9,
             decoration: BoxDecoration(
               color: const Color(0xFF67C7FF),
               borderRadius: BorderRadius.circular(20),
@@ -48,7 +48,7 @@ class WelcomePage extends StatelessWidget {
                   'BEACHELA RESTAURANT',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 30,
+                    fontSize: 25,
                     color: Color(0xFF000000),
                   ),
                 ),
@@ -95,7 +95,14 @@ class WelcomePage extends StatelessWidget {
                 }, const Color(0xFF16AAFF), 'Ver Menú', width * 0.35,
                     height * 0.06),
                 button(() {
-                  // Function
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return const BookingPage();
+                      },
+                    ),
+                  );
                 }, const Color(0xFF16AAFF), 'Hacer Reservas', width * 0.35,
                     height * 0.06),
                 const Spacer(flex: 1),
