@@ -91,7 +91,14 @@ class WelcomePage extends StatelessWidget {
                 }, const Color(0xFF16AAFF), 'Iniciar Sesión', width * 0.35,
                     height * 0.06),
                 button(() {
-                  // Function
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return const MenuPage();
+                      },
+                    ),
+                  );
                 }, const Color(0xFF16AAFF), 'Ver Menú', width * 0.35,
                     height * 0.06),
                 button(() {
